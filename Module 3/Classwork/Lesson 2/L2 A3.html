@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <style>
+            /* The animation code */
+            @keyframes my_animation {
+                25% {
+                    background-color: red;
+                }
+                50% {
+                    background-color: yellow;
+                }
+                75% {
+                    background-color: blue;
+                }
+                100% {
+                    background-color: green;
+                }
+            }
+
+            /* The element to apply the animation to */
+            div {
+                width: 200px;
+                height: 200px;
+                background-color: purple;
+                animation-name: my_animation;
+                animation-duration: 4s;
+                animation-iteration-count: infinite;
+                /* Animation-iteration-count: infinite;*/
+            }
+        </style>
+    </head>
+
+    <body>
+        <div></div>
+    </body>
+    
+</html>
