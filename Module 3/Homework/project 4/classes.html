@@ -3,12 +3,80 @@
 
     <head>
         <style>
+            body {
+                font-family: 'Arial', 'sans-serif';
+                background-color: #f0c537;
+                color: #743c04;
+                font-weight: bold;
+            }
 
+            h1 {
+                color: #743c04;
+            }
+
+            a {
+                color: #743c04;
+                text-decoration: none;
+            }
+
+            a:hover {
+                color: #913831;
+            }
+
+            ul>li {
+                font-weight: bold;
+            }
+
+            h1+p {
+                background-color: #161B22;
+                padding: 10px;
+                border-radius: 5px;
+            }
+
+            ul li {
+                color: #743c04;
+            }
+
+            ul li:hover {
+                color: #913831;
+            }
+
+            p:not(:first-of-type) {
+                text-decoration: underline;
+                text-decoration-color: #643506;
+            }
+
+            ul li::before {
+                content: "🏺";
+            }
+
+            a::after {
+                content: "🦴";
+            }
+
+            p::first-letter {
+                font-size: 200%;
+                color: #c22317;
+            }
         </style>
     </head>
 
     <body>
-        <h1></h1>
+        <h1>Welcome to the Archeology Club</h1>
+        <ul>
+            <li>Excavation Missions</li>
+            <li>Historical Artifacts</li>
+            <li>Pyramids and Temples</li>
+            <li>Ancient Mysteries</li>
+        </ul>
+        <p>The past has always captivated humans.
+            It's a journey to the unknown.</p>
+        
+        <p>From the start of everything to the present, we continue to
+            explore the vastness of history</p>
+        <a href="#">Join our Mission</a>
+        <a href="#">Latest Archeology News</a>
+        <a href="#">Gallery of the Timeline</a>
     </body>
-
+    
 </html>
