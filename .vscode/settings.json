@@ -1,7 +1,3 @@
 {
-    "workbench.editor.wrapTabs": true,
-    "workbench.editor.enablePreviewFromQuickOpen": true,
-    "workbench.editor.enablePreviewFromCodeNavigation": true,
-    "workbench.editor.scrollToSwitchTabs": false,
-    "editor.cursorStyle": "underline"
+    "editor.cursorWidth": 1
 }
