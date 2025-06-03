@@ -3,5 +3,5 @@
     "workbench.editor.enablePreviewFromQuickOpen": true,
     "workbench.editor.enablePreviewFromCodeNavigation": true,
     "workbench.editor.scrollToSwitchTabs": false,
-    "editor.cursorStyle": "line"
+    "editor.cursorStyle": "underline"
 }
