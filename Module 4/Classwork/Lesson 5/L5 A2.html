@@ -2,10 +2,32 @@
 <html lang="en">
 
     <head>
-         <title>Cards</title>
+         <title>Bootstrap Example</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
         </script>
+
+        <style>
+            .spinner-border:hover {
+                color: red;
+                box-shadow: 3px 3px 4px rgb(175, 63, 63);
+            }
+
+            .spinner-border {
+                color: blue;
+            }
+        </style>
     </head>
+
+    <body>
+        <div class="container pb-5 mt-3" style="background-color: aquamarine;">
+            <h2>Spinners</h2>
+            <p>To create a spinner/loader, use the <code>.spinner-border</code> class:</p>
+
+            <div class="spinner-border"></div>
+        </div>
+    </body>
+
+</html>
