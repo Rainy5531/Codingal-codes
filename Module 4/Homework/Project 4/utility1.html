@@ -8,13 +8,58 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
         </script>
+
+        <style>
+            body {
+                background-color: #f8f9fa;
+            }
+
+            .jumbotron {
+                background-color: #e9ecef;
+                padding: 2rem 1rem;
+                margin-bottom: 2rem;
+            }
+
+            .btn {
+                margin: 0.5rem;
+                padding: 0.75rem 1.5rem;
+                font-size: 1.25rem;
+                font-weight: 500;
+                transition: all 0.3s ease-in-out;
+            }
+
+            .btn:hover {
+                box-shadow: 6px 6px 2px rgba(0, 0, 0, 0.3);
+                scale: 1.1;
+            }
+        </style>
     </head>
 
     <body>
-        <div class="jumbotron">
+        <div class="jumbotron text-center">
             <div class="container">
-                
+                <h1 class="display-4" style="font-weight: 400;">Websites</h1>
+                <p class="lead" style="font-weight: 400;">This is a website finder.</p>
             </div>
+        </div>
+
+        <div class="container-fluid text-center mb-4">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <input type="text" class="form-control border border-dark rounded" placeholder="🔍 Search websites">
+                </div>
+                <div>
+                    Try searching for websites like <span class="badge badge-primary">Google</span>, <span class="badge badge-success">Gmail</span>, <span class="badge badge-warning">Chrome</span>, <span class="badge badge-danger">YouTube</span>, or <span class="badge text-white" style="background-color: rgb(196, 26, 196);">Yahoo</span>.
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid text-center">
+            <a href="https://www.google.com" class="btn btn-primary">Google</a>
+            <a href="https://www.gmail.com" class="btn btn-success">Gmail</a>
+            <a href="https://chrome.com" class="btn btn-warning">Chrome</a>
+            <a href="https://www.youtube.com" class="btn btn-danger">YouTube</a>
+            <a href="https://www.yahoo.com" class="btn text-white" style="background-color: rgb(196, 26, 196);">Yahoo</a>
         </div>
         
     </body>
