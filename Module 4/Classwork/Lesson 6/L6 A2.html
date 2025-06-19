@@ -20,13 +20,75 @@
             #section1 {
                 padding-top: 50px;
                 height: 500px;
-                background-color: rgb(184, 138, 226);
+                color: green;
+                background-color: white;
+            }
+
+            #section2 {
+                margin-top: 500px;
+                padding-top: 50px;
+                padding-bottom: 810px;
+                height: 500px;
+                color: White;
+                background-color: orange;
             }
         </style>
     </head>
 
     <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <!--navbar: Makes it a Bootstrap navbar.
+            navbar-inverse: Makes the background dark and text light.
+            navbar-fixed-top: Keeps it fixed at the top, even when you scroll.-->
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <!--This section holds the brand name and the toggle (hamburger) button for small screens.-->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <!--This is the hamburger button
+                        type="button": It's a clickable button
+                        class="navar-toggle": Bootstrap style for the hamburger.
+                        data-toggle="collapse": Tells Bootstrap: "This button will open or close something."-->
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <!--These 3 lines create the three horizontal bars of the hamburger-->
+                    </button>
+                    <a class="navbar-brand" href="#">Codingal</a>
+                    <!--This is the brand name or logo shown on the top bar (navbar)-->
+                </div>
+                <div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <!--Can collapse or expand (hide/show) - useful for small screens like mobile.-->
+                        <ul class="nav navbar-nav">
+                            <!--This is an unordered list (bulleted list, but styled as a navbar) that holds the navigation links-->
+                            <li><a href="#section1">Section 1</a></li>
+                            <li><a href="#section2">Section 2</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
 
+        <div id="section1" class="container-fluid">
+            <h1>Section 1</h1>
+            <h3>Codingal</h3>
+            <h5>Codingal is on a mission to inspire school kids to fal in love with coding.   Coding is proven to develop
+                creativity, logical thinking and problem solving skills in kids. Coding is an essential skill of the future
+                and more than 60% of all jobs in STEM-related fields requir knowledge of code. Kids who start learning to
+                code at a young age are guaranteed to become leaders, creators and entrepreneurs of the future.
+            </h5>
+
+                <p>Scroll this section.</p>
+            
+        </div>
+
+        <div id="section2" class="container-fluid">
+            <h1>Section 2</h1>
+            <h3>Codingal</h3>
+            <h5>Vivek Prasad and Satyam Baranwal are the founders of Codingal
+            </h5>
+
+                <p>Scroll this section.</p>
     </body>
 
 </html>
