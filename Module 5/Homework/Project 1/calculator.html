@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Calculator</title>
+    </head>
+
+    <body>
+        <p id="x"></p>
+        <p id="y"></p>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <p id="demo4"></p>
+        <p id="demo5"></p>
+        <p id="demo6"></p>
+        <p id="demo7"></p>
+        <p id="demo8"></p>
+        <script>
+           var x, y, z, a, b, c, d, e, f, g, h;
+            x = 5;
+            y = 2;
+            document.getElementById("x").innerHTML = "x = " + x;
+            document.getElementById("y").innerHTML = "y = " + y;
+            z = x + y;
+            a = x - y;
+            b = x * y;
+            c = x / y;
+            d = x % y;
+            e = x ** y;
+            f = x += 4;
+            g = y -= 3;
+            h = x *= 2;
+            document.getElementById("demo").innerHTML = "The sum of x and y is " + z;
+            document.getElementById("demo1").innerHTML = "The difference of x and y is " + a;
+            document.getElementById("demo2").innerHTML = "The product of x and y is " + b;
+            document.getElementById("demo3").innerHTML = "The quotient of x and y is " + c;
+            document.getElementById("demo4").innerHTML = "The remainder of x divided by y is " + d;
+            document.getElementById("demo5").innerHTML = "x exponenciated to the y<sup>th</sup> power is " + e;
+            document.getElementById("demo6").innerHTML = "x plus 4 is " + f + " and the new value of x has been changed to " + x;
+            document.getElementById("demo7").innerHTML = "y minus 3 is " + g + " and the new value of y has been changed to " + y;
+            document.getElementById("demo8").innerHTML = "x times 2 is " + h + " and the value of x has been changed again into " + x;
+        </script>
+    </body>
+
+</html>
