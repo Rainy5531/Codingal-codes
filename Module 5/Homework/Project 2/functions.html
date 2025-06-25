@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+    <body>
+        <button onclick="myFunction(7)">Get answer</button>
+        <p id="result"></p>
+        <button onclick="myFunction2()">Get answer 2</button>
+        <p id="result2"></p><br>
+        <p id="result3"></p>
+        <script>
+            function myFunction(x, y) {
+                if (y === undefined) {
+                    y = 2;
+                }
+
+                var result = x * y;
+                document.getElementById("result").innerHTML = 'If x is 7 and y is not defined, then the answer is &nbsp' + result;
+            }
+
+            function myFunction2(x, y) {
+                if (x == undefined) {
+                    x = 5;
+                }
+
+                if (y == undefined) {
+                    y = 2;
+                }
+
+                var result = x * y;
+                document.getElementById("result2").innerHTML = 'If both x and y are not defined, then the answer is &nbsp' + result;
+            }
+
+            function myFunction3(x, y) {
+                if (y === undefined) {
+                    y = 2;
+                }
+
+                var result = x * y;
+                document.getElementById("result3").innerHTML = 'If x is 4 and y is undefined, then the answer is &nbsp' + result;
+            }
+            myFunction3(4);
+        </script>
+    </body>
+
+</html>
