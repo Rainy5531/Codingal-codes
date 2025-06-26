@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+    <body>
+        <h2>JavaScript For Loop</h2>
+
+        <script>
+            var fruits = ["Apple", "Mango", "Grapes", "Watermelon", "Jack Fruit", "Banana","Cherry"];
+            //array; Array is Heterogenous in nature
+
+            for (i = 0; i < fruits.length; i++) {
+                var text = fruits[i] + "<br>";
+                document.write(text);
+            }
+
+            document.write("<hr>");
+
+            for (i = 6; i > -1; i--) {
+                var text = fruits[i] + "<br>";
+                document.write(text);
+            }
+
+            document.write("<hr>");
+
+            for (i = 0; i < fruits.length; i++) {
+                var text = fruits[i++] + "<br>";
+                document.write(text);
+            }
+        </script>
+    </body>
+
+</html>
