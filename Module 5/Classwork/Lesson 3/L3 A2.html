@@ -5,7 +5,7 @@
         <h2>JavaScript For Loop</h2>
 
         <script>
-            var fruits = ["Apple", "Mango", "Grapes", "Watermelon", "Jack Fruit", "Banana","Cherry"];
+            var fruits = ["Apple", "Mango", "Grapes", "Watermelon", "Jack Fruit", "Banana", "Cherry", "Avacado"];
             //array; Array is Heterogenous in nature
 
             for (i = 0; i < fruits.length; i++) {
@@ -25,6 +25,26 @@
             for (i = 0; i < fruits.length; i++) {
                 var text = fruits[i++] + "<br>";
                 document.write(text);
+            }
+
+            document.write("<hr>");
+
+            for (i = 0; i < fruits.length; i++) {
+                if (fruits[i].startsWith("A")) {
+                    var text = fruits[i] + "<br>";
+                    document.write(text);
+                }
+            }
+
+            document.write("<hr>");
+
+            for (i = 0; i < fruits.length; i++) {
+                var patt = new RegExp("^A"); 
+                var res = patt.test(fruits[i]);
+                if (res) {
+                    var text = fruits[i] + "<br>";
+                    document.write(text);
+                }
             }
         </script>
     </body>

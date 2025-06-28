@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+    <body>
+        <h2>Random Numbers</h2>
+        <p id="result"></p>
+        <p id="result2"></p>
+
+        <h2>Date</h2>
+        <p id="result3"></p>
+        <h4>Specific</h4>
+        <p id="result4" style="margin-top: -15px;"></p>
+
+        <script>
+            var num1 = Math.random() * 100
+            document.getElementById("result").innerHTML = "Random value: " + num1;
+            
+            var num2 = Math.floor(Math.random() * 100000) / 1000
+            document.getElementById("result2").innerHTML = "A random value rounded to the thousandths place place: " + num2 + "<hr>";
+            
+
+            var date = new Date();
+            document.getElementById("result3").innerHTML = 
+                "Today's date is: " +  date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear() + "<br>" +
+                "The time is: " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds() + "<br>"
+
+            switch (new Date().getDay()) {
+                case 0:
+                    day = "Sunday";
+                    break;
+                case 1:
+                    day = "Monday";
+                    break;
+                case 2:
+                    day = "Tuesday";
+                    break;
+                case 3:
+                    day = "Wednesday";
+                    break;
+                case 4:
+                    day = "Thursday";
+                    break;
+                case 5:
+                    day = "Friday";
+                    break;
+                case 6:
+                    day = "Saturday";
+            }
+            document.getElementById("result3").innerHTML += "Today is " + day;
+
+            document.getElementById("result4").innerHTML = date;
+        </script>
+    </body>
+
+</html>
