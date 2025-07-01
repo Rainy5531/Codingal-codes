@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+    <body>
+
+
+        <h2>JavaScript Objects and its Properties</h2>
+
+        <p>There are two different ways to access an object property </p>
+        <p>You can use <code>.property</code> or <code>["property"]</code>.</p>
+        <p id="demo"></p>
+        <script>
+            // Create a javascript object:
+            //key:value pairs
+            var person = {
+                firstName: "Adam",
+                age: 10,
+                grade: 9,
+                school: "ABC High School",
+            };
+            // Display some data from the object:
+            document.getElementById("demo").innerHTML = person.firstName + " is " + person.age + " years old.";
+            document.getElementById("demo").innerHTML += "<br>" + person["firstName"] + " is in " + person.grade + "th grade at " + person.school + ".";
+        </script>
+    </body>
+
+</html>
