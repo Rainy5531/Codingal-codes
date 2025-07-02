@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+    <body>
+        <h2>Finding Sum Using Arguments</h2>
+        <p>The values are 8, 6, 7, 3, 5, -2, -1, -6, 9, -4 and -2</p>
+        <p id="result"></p>
+        <br><hr>
+        <h2>Trignometric Functions</h2>
+        <p id="result2"></p>
+        <script>
+            function findSum() {
+                var sum = 0;
+
+                for (var i = 0; i < arguments.length; i++) {
+                    sum += arguments[i];
+                }
+
+                return sum;
+            }
+            document.getElementById("result").innerHTML = "The sum of the numbers is " + findSum(8, 6, 7, 3, 5, -2, -1, -6, 9, -4, -2);
+
+           var value = Math.cos(0 * Math.PI / 180);
+           document.write("Value of Cos(0°): " + value + "<br><br>");
+
+           var value = Math.sin(60 * Math.PI / 180);
+           document.write("Value of Sin(60°): " + value + "<br><br>");
+
+           var value = Math.tan(45 * Math.PI / 180);
+           document.write("Value of Tan(45°): " + value + "<br><br>");
+
+           var value = Math.acos(-1);
+           document.write("Value of Sec(-1 rad): " + value + "<br><br>");
+
+           var value = Math.asin(1);
+           document.write("Value of Cosec(1 rad): " + value + "<br><br>");
+
+           var value = Math.atan(3);
+           document.write("Value of Cot(3 rad): " + value + "<br><br>");
+        </script>
+    </body>
+
+</html>
