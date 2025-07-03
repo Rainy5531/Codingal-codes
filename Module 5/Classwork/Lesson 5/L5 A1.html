@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+    <body>
+
+        <h2>JavaScript Arrays</h2>
+        <p id="r"></p>
+        <hr>
+        <p id="r2"></p>
+
+        <script>
+            //Array
+            var Codingal = ["Coding", "Magic", "Learn", "2"];
+            document.getElementById("r").innerHTML = Codingal[2] + "<br>";
+
+            for (var i = 0; i < Codingal.length; i++) {
+                if (Codingal[i].length <= 5) {
+                    document.getElementById("r2").innerHTML += Codingal[i] + "<br>";
+                }
+            }
+        </script>
+    </body>
+
+</html>
