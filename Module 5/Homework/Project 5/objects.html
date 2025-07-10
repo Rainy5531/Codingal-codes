@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Object and Array Example</title>
+    </head>
+    <body>
+
+        <h1>Object and Array Demonstration</h1>
+
+        <div id="output" style="font-size: 20px;"></div>
+
+        <script>
+            const person = {
+            name: "Tinu",
+            age: 30,
+            city: "New York",
+            occupation: "Software Engineer"
+            };
+            const favoriteColors = [" red", " green", " blue", " yellow"];
+
+            document.getElementById("output").innerHTML = "Name: " + person.name + "<br>Age: " + person.age + "<br>He lives in " + person.city + "." + "<br>He is a " + person.occupation + ".<br>" + person.name + "'s favorite color is " + favoriteColors[2] + ".<br>";
+
+            favoriteColors.sort()
+            favoriteColors.reverse()
+            favoriteColors.pop()
+            favoriteColors.push(" and orange")
+            document.getElementById("output").innerHTML += "His friends like the colors " + favoriteColors
+        </script>
+    </body>
+</html>
