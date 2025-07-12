@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+    <body>
+        <h2>Numbers in and outside a block</h2>
+        <p id="result"></p>
+        <script>
+            var i;
+            var text = " ";
+            {
+                let i = 0;
+                while (i < 10) {
+                    text += "The value inside the block " + i + "<br>";
+                    i++;
+                }
+                document.getElementById("result").innerHTML = text;
+            }
+            document.write("The value of i outside te block is " + i)
+        </script>
+    </body>
+
+</html>
