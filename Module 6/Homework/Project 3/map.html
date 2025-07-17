@@ -12,37 +12,43 @@
         <button onclick="ascending()">Ascending order</button>
         <button onclick="descending()">Descending order</button>
         <br><br>
-        <p>result</p>
-        <p id="result"></p>
+        <p>Result: <r id="result"></r> </p>
         <script>
             var numbers = [22, 58, 12, 16];
+            var array = numbers.slice();
+
             document.getElementById("result").innerHTML = numbers;
-            var array
+
             function multiply() {
-                var array = numbers.map (function (num){return num * 10;});
+                array = numbers.map (function (num){return num * 10;});
                 document.getElementById("result").innerHTML = array;
             }
+
             function exponentiate() {
-                var array = numbers.map (function (num){return num ** 2;});
+                array = numbers.map (function (num){return num ** 2;});
                 document.getElementById("result").innerHTML = array;
             }
+
             function divide() {
-                var array = numbers.map (function (num){return num / 2;});
+                array = numbers.map (function (num){return num / 2;});
                 document.getElementById("result").innerHTML = array;
             }
+
             function reset() {
-                var array = numbers.slice();
+                array = numbers.slice();
                 document.getElementById("result").innerHTML = array;
             }
+
             function ascending() {
-                var array = numbers.slice();
-                newarray.sort(function (a, b) {return a - b});
-                document.getElementById("result").innerHTML = array;
+                var res = array.slice();
+                res.sort(function (a, b) {return a - b;});
+                document.getElementById("result").innerHTML = res;
             }
+            
             function descending() {
-                var array = numbers.slice();
-                newarray.sort(function (a, b) {return b - a});
-                document.getElementById("result").innerHTML = array;
+                var res = array.slice();
+                res.sort(function (a, b) {return b - a;});
+                document.getElementById("result").innerHTML = res;
             }
         </script>
     </body>
