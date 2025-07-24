@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+    <body>
+        <h2>JavaScript Callback</h2>
+        <p>Do a calculation and then display the result.</p>
+        <p id="result"></p>
+        <script>
+            function myDisplayer(value) {
+                document.getElementById("result").innerHTML = value;
+            }
+            function myCalculator(num1, num2, myCallback) {
+                let sum = num1 + num2;
+                myCallback(sum);
+            }
+            myCalculator(5, 5, myDisplayer);
+        </script>
+    </body>
+
+</html>
+<!--
+callbacks: a way to pass a function as an argument to another function so it can be called ("called back") later.
+-->
