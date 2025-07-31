@@ -1,0 +1,30 @@
+body {
+    background: #252525;
+    font-family: "Baloo Tamma 2", cursive;
+    scroll-behavior: smooth;
+}
+
+/* Main Heading Font */
+.m-heading {
+    font-family: "Roboto Slab", serif;
+}
+
+/* Main Container height */
+.main-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(microscope.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.text {
+    font-size: 80px;
+}
+
+.text2 {
+    font-size: 60px;
+}
