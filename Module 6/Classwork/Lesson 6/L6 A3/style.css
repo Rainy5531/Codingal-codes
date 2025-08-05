@@ -31,6 +31,34 @@ h1 {
     width: 300px;
 }
 
+.result {
+    width: 59.1%
+}
+
+input {
+    padding: 25px;
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+}
+
+.row {
+    margin-bottom: 3px;
+}
+
+input[type="text"] {
+    background-color: rgb(47, 51, 50);
+    width: 218px;
+}
+
+input[type="button"]:hover {
+    background-color: rgb(160, 160, 160);
+    color: #fff;
+}
+
 button {
     border: none;
     background-color: rgb(39, 36, 36);
@@ -63,7 +91,7 @@ a {
     font-weight: 200;
 }
 
-.button-buttons {
+.bottom-buttons {
     display: flex;
     margin-left: -2.3px;
 }
