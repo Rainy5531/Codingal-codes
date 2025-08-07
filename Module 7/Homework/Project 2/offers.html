@@ -26,30 +26,33 @@
                 border-bottom: 2px solid #f5ba09;
                 transition: 0.5s ease;
             }
-            .main-container {
-                background-image: url(burger.jpg);
-                background-size: 1800px;
-                background-repeat: no-repeat;
-                background-position: 112px 0px;
+            .navigation-link.active {
+                border-bottom: 4px solid #f5ba09;
+                color: #f5ba09 !important;
+                font-weight: bold;
+                font-size: 50px;
+            }
+            .heading:hover {
+                text-decoration: underline rgb(221, 65, 38);
             }
         </style>
     </head>
 
-    <body class="main-container">
+    <body>
         <div class="container pt-3">
             <div class="row">
-                <div class="col-5 d-flex justify-content-center align-items-center" style="background-color: rgb(221, 65, 38);">
-                    <h1 class="pl-2" style="color: #f5ba09; font-size: 55px;">Restaurant</h1>
+                <div class="col-4 d-flex justify-content-center align-items-center" style="background-color: rgb(221, 65, 38);">
+                    <a href="http://127.0.0.1:3000/Module 7/Homework/Project 1/website.html" class="pl-2 heading" style="color: #f5ba09; font-size: 55px;">Restaurant</a>
                 </div>
-                <div class="col-7 pt-2">
-                    <div class="row text-center pt-2 d-flex align-items-center" style="font-size: 30px;">
-                        <div class="col-4">
+                <div class="col-8 pt-2">
+                    <div class="row text-center pt-2 d-flex" style="font-size: 30px;">
+                        <div class="col-4" style="margin-top: 14px;">
                             <a href="http://127.0.0.1:3000/Module 7/Homework/Project 2/menu.html" class="text-white navigation-link">Menu</a>
                         </div>
-                        <div class="col-4">
-                            <a href="http://127.0.0.1:3000/Module 7/Homework/Project 2/offers.html" class="text-white navigation-link">Offers</a> 
+                        <div class="col-4" style="margin-top: -15px;">
+                            <a href="http://127.0.0.1:3000/Module 7/Homework/Project 2/offers.html" class="text-white navigation-link active">Offers</a> 
                         </div>
-                        <div class="col-4">
+                        <div class="col-4" style="margin-top: 14px;">
                             <a href="http://127.0.0.1:3000/Module 7/Homework/Project 2/contacts.html" class="text-white navigation-link">Contacts</a>
                         </div>
                     </div>
@@ -58,11 +61,6 @@
             <hr style="border: 1px solid #f5ba09;">
         </div>
 
-        <div class="container">
-            <h2 class="text-white" style="font-size: 70px;">Welcome to</h2>
-            <h1 class="text-warning m-heading" style="font-size: 100px;">My Restaurant</h1>
-            <h6 class="text-white" style="font-size: 25px;">Delicious Food Awaits</h6>
-        </div>
     </body>
 
 </html>
