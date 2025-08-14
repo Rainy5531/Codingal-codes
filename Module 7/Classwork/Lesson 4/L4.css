@@ -19,10 +19,12 @@ body {
     top: 20px;
     position: relative;
     border-radius: 50px;
+    box-shadow: rgb(228, 23, 126) 4px 4px 3px;
 }
 
 #keyboard {
     height: 400px;
+    padding-top: 100px;
 }
 
 .operator,
