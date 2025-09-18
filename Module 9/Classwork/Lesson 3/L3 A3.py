@@ -3,7 +3,8 @@ class parrot:
     # class attribute
     species = "bird"
 
-    #instance attribute
+    # instance attribute
+    # Constructor method - special method
     def __init__(self, name, age):
         self.name = name
         self.age = age
