@@ -34,7 +34,6 @@ class Circle(Polygon):
     def area(self):
         return (22 / 7) * (self.radius ** 2)
 
-# Example usage:
 if __name__ == "__main__":
     t = Triangle(int(input("\nEnter base of triangle: ")), int(input("Enter height of triangle: ")))
     print("Area of Triangle:", t.area())
