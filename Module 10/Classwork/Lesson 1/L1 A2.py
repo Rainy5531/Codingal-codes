@@ -19,8 +19,8 @@ file_append.write("Hi! I am Penguin. I am 1 yr. old.")
 file_append.close()
 
 '''
- Original text in Codingal2.txt
- -------------------------------
+Original text in Codingal2.txt
+--------------------------------
 Codingal is on a mission to inspire school kids to fall in love with coding.
 While still in school, those who start young will be ahead of everyone by the time they get into college.
 '''
