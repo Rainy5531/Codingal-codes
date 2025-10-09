@@ -1,2 +1,2 @@
-Codingal is on a mission to inspire school kids to fall in love with coding.
-Coding is good for health.
+ File in write mode ....Hi! I am Penguin. I am 1 yr. old.
+ File in append mode ....Hi! I am Penguin. I am 1 yr. old.
