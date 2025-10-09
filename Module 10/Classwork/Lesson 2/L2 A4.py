@@ -8,7 +8,7 @@ fn1 = open('Codingal2.txt', 'w')
 # read the content of the file line by line
 cont = fn.readlines()
 print(cont)
-for i in range(1, len(cont)+1): # i = 1,2,3,4,5
+for i in range(1, len(cont)+1): # i = 1,2,3,4
     if(i % 2 != 0):
         fn1.write(cont[i-1])
     else:
