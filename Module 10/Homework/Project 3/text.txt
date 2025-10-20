@@ -1,0 +1,3 @@
+Coding is basically the computer language used to develop apps, websites, and software. 
+Without it, we’d have none of the most popular technology we’ve come to rely on such as Facebook, our smartphones, the browser. 
+It all runs on code.
