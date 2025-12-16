@@ -30,3 +30,16 @@ SELECT SUM(price) AS total_price FROM products;
 SELECT COUNT(DISTINCT supplier_id) AS distinct_supplier_id FROM products;
 
 SELECT * FROM products WHERE product_name LIKE "__A%";
+
+SELECT AVG(price) AS supplier1_average_price FROM products WHERE supplier_id = '1';
+
+SELECT MIN(price) AS minimum_price FROM products WHERE product_name LIKE "C%";
+
+SELECT price AS second_highest_price FROM products WHERE price = 
+    (SELECT MAX(price) FROM products WHERE price < 
+        (SELECT MAX(price) FROM products)
+-- SELECT MAX(price) AS second_highest_price FROM products 
+--     WHERE price < (SELECT MAX(price) FROM products);
+);
+
+SELECT * FROM products WHERE LENGTH(unit) > 15;
