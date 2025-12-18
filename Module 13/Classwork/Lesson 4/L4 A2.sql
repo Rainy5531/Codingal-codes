@@ -1,0 +1,61 @@
+-- Create the DEPARTMENTS table if it doesn't exist
+CREATE TABLE IF NOT EXISTS DEPARTMENTS (
+    EMPLOYEE_ID TEXT,
+    NAME TEXT,
+    DEPARTMENT_ID TEXT,
+    MANAGER_ID TEXT, 
+    SALARY
+);
+
+-- Insert sample data into the DEPARTMENTS table
+INSERT INTO DEPARTMENTS (EMPLOYEE_ID, NAME, DEPARTMENT_ID, MANAGER_ID, SALARY) VALUES
+    ('100', 'STEVEN KING', '90', '100', 24000),
+    ('101', 'NEENA KOCCHAR', '90', '100', 17000),
+    ('102', 'LEX DEHAAN', '90', '102', 9000),
+    ('103', 'BRUCE LEE', '60', '103', 4800),
+    ('104', 'DIANA WILLS', '60', '103', 25000),
+    ('105', 'VALLI PATOR', '50', '100', 4200),
+    ('1973', 'LUV HAMI', '60', '102', 5000),
+    ('106', 'DAVID AUSTIN', '90', '100', 6000);
+
+SELECT * FROM DEPARTMENTS;
+
+-- Query to count the number of employees in each department
+SELECT DEPARTMENT_ID AS "DEPARTMENT CODE",
+COUNT(*) AS "NO OF EMPLOYEES"
+FROM DEPARTMENTS
+GROUP BY DEPARTMENT_ID;
+
+-- Query to sum the salary of each department
+SELECT DEPARTMENT_ID,
+SUM(SALARY)
+FROM DEPARTMENTS
+GROUP BY DEPARTMENT_ID;
+
+-- Query to count the number of employees and sum the salary of each department
+SELECT DEPARTMENT_ID AS "DEPARTMENT CODE",
+COUNT(*) AS "NO OF EMPLOYEES",
+SUM(SALARY) AS "TOTAL SALARY"
+FROM DEPARTMENTS
+GROUP BY DEPARTMENT_ID;
+
+-- Query to sum the salary of emplyoees with a specific manager
+SELECT DEPARTMENT_ID AS "DEPARTMENT CODE",
+SUM(SALARY) AS "TOTAL SALARY"
+FROM DEPARTMENTS
+WHERE MANAGER_ID = '103'
+GROUP BY DEPARTMENT_ID;
+
+-- Query to find departments with more than 2 employees
+SELECT DEPARTMENT_ID,
+COUNT(*) AS "NO OF EMPLOYEES"
+FROM DEPARTMENTS
+GROUP BY DEPARTMENT_ID
+HAVING COUNT(*) > 2;
+
+-- Order
+--------------------
+-- WHERE
+-- GROUP BY
+-- HAVING
+-- ORDER BY
