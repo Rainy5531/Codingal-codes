@@ -1,0 +1,34 @@
+CREATE TABLE IF NOT EXISTS CUSTOMERS (
+    CUSTOMER_ID INT PRIMARY KEY,
+    NAME VARCHAR(50),
+    PHONE_NO VARCHAR(10),
+    CITY VARCHAR(50)
+    PRODUCT_ID INT,
+    COST DECIMAL(10, 2)
+);
+
+INSERT INTO CUSTOMERS (CUSTOMER_ID, NAME, PHONE_NO, CITY, PRODUCT_ID, COST) VALUES
+(1, 'Alice Smith', '1234567890', 'New York', 101, 250.00),
+(2, 'Bob Johnson', '2345678901', 'Los Angeles', 102, 150.50),
+(3, 'Charlie Brown', '3456789012', 'Chicago', 103, 300.75),
+(4, 'Diana Horton', '4567890123', 'Houston', 104, 450.00),
+(5, 'Adrian Porter', '5678901234', 'Phoenix', 105, 120.25),
+(6, 'Eve Adams', '6789012345', 'Philadelphia', 106, 500.00),
+(7, 'Franklin Stone', '7890123456', 'San Antonio', 107, 275.00),
+(8, 'Grace Lee', '8901234567', 'San Diego', 108, 320.40),
+(9, 'Amanda Scott', '9012345678', 'Dallas', 109, 410.60),
+(10, 'Ian Clark', '0123456789', 'San Jose', 110, 600.00);
+
+SELECT * FROM CUSTOMERS;
+
+SELECT NAME, CITY, PRODUCT_ID, COST
+FROM CUSTOMERS
+WHERE NAME LIKE 'A%' OR NAME LIKE '%or%';
+
+SELECT PRODUCT_ID, COST
+FROM CUSTOMERS
+WHERE COST > 300.00;
+
+SELECT NAME, PHONE_NO, CITY
+FROM CUSTOMERS
+WHERE CITY IN ('New York', 'Los Angeles', 'Chicago');
