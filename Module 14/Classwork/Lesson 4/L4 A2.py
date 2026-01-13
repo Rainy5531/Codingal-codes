@@ -55,3 +55,19 @@ null_match = pd.read_sql("""
 """, conn)
 
 print(null_match)
+
+team_sum = pd.read_sql("""
+                         SELECT Team_1, Team_2, Team_1 + Team_2 AS Sum_of_Team_1_and_2
+                         FROM Match
+                         WHERE Match_Winner IS NULL
+""", conn)
+
+print(team_sum)
+
+team_largest = pd.read_sql("""
+                         SELECT Team_1, Team_2, MAX(Team_1, Team_2) AS Largest_of_Team_1_and_2
+                         FROM Match
+                         WHERE Match_Winner IS NULL
+""", conn)
+
+print(team_largest)
