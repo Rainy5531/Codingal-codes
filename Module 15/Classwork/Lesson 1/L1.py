@@ -43,3 +43,25 @@ print(students)
 print("\nSort by height")
 sorted_students = np.sort(students, order='height') # The np.sort() function returns a *new* sorted array, it doesn't modify the original.
 print(sorted_students)
+
+
+
+
+
+# *** Extra ***
+print(np.linspace(0,1,5)) # 5 equally spaced numbers between 0 and 1
+
+# Special arrays
+print(np.zeroes((2,3))) # 2x3 matrix of zeroes
+print(np.ones((3,3)))   # 3x3 matrix of ones
+print(np.eye(3))        # 3x3 identity matrix
+
+a = np.array([1, 2, 3])
+b = np.array([4, 5, 6])
+
+print(a + b)        # element-wise addition
+print(a * b)        # element-wise multiplication
+print(np.dot(a, b)) # dot product (scalar)
+print(np.mean(a))   # average of elements
+print(np.std(a))    # standard deviation of elements
+print(np.sum(a))    # sum of elements
