@@ -3,7 +3,7 @@ import numpy as np
 
 mydataset = {
     'cars' : ['BMW', 'Mercedes', 'Tesla'],
-    'passings' : [3, 7, 2]
+    'passings' : [3, 7, 4]
 }
 
 df1 = pd.DataFrame(mydataset)
@@ -33,3 +33,8 @@ print("is null:", df.isnull().sum())
 print(df.head())
 # print(df_new)
 # print(df.fillna(subset = ['year'], value = 1930, inplace = True))
+
+
+# ***EXTRA***
+print(df1.iloc[[0,2], [0,1]])
+print(df1.loc[[0,2], ['cars','passings']])
